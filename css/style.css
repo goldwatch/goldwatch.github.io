@@ -283,19 +283,20 @@ h1, h2, h3 {
 	background-color: #fff;
 	position: relative;
 }
-#proizvodi .cena {
-	position: absolute;
-	right: 20px;
-	top:20px;
-	background-color: rgb(220,214,180);
-	border-radius: 2px;
-	padding: 5px 15px;
-}
 
 #proizvodi .slika {
 	margin-bottom: 20px;
 }
 
+.poz .okvir #proizvodi .proizvod .opis p {
+	color: #000;
+	text-align: center;
+}
+
+.poz .okvir #proizvodi .proizvod .opis h4 {
+	color: #FFD700;
+	font-size: 20px;
+}
 
 /* ----- BRENDOVI  ----- */
 
