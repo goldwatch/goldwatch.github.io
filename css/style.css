@@ -106,6 +106,10 @@ h1, h2, h3 {
 	font-size: 20px;
 }
  
+ #dugmeMeni a i {
+	margin-left: 10px;
+}
+
 /* Slajder */
  
 #slajder {
