@@ -1,0 +1,621 @@
+/* Korisceni fontovi */
+
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
+/* Osnovna podesavanja*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, input, textarea {
+	font-family: 'Philosopher', sans-serif;
+}
+
+body {
+	background-color: #000;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cleaner {
+	clear: both;
+}
+
+h1, h2, h3 {
+	letter-spacing:4px;
+}
+
+.okvir {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.poz {
+	width: 100%;
+	background-color: #000;
+}
+
+
+/* ----- ZAGLAVLJE  ----- */
+
+#heder {
+	width: 100%;
+	height: 120px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	background-color: #FFD700;
+}
+
+#heder .okvir {
+		padding: 10px 20px;
+}
+
+#logo {
+	width: 20%;
+	padding: 7px 0px;
+	float: left;
+}
+
+#logo img {
+	border-radius: 50px;
+}
+
+#meni {
+	width: 80%;
+	float: left;
+}
+
+#meni ul {
+	width: 100%;
+	height: 120px;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#meni ul li {
+	font-size: 30px;
+}
+
+#dugmeMeni {
+	float: right;
+	height: auto;
+	width: auto;
+	display: none;
+}
+
+#dugmeMeni a {
+	display: inline-block;
+	background-color: #000;
+	padding: 15px 30px;
+	color: #FFD700;
+	border-radius: 5px;
+	margin-top: 25px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+#dugmeMeni a i {
+	margin-left: 10px;
+}
+
+/* ----- SLAJDER  ----- */
+
+#slajder {
+	margin-top: 150px;
+	width: 100%;
+	height: 550px;
+	background-image: url('../images/slider.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 47%;
+	
+}
+
+#garancija {
+	margin-top: 150px;
+	width: 100%;
+	height: 550px;
+	background-image: url('../images/garancija.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 47%;
+	
+}
+
+#slajder .okvir {
+	height: 100%;
+	position: relative;
+}
+
+#slajderTekst {
+	width: 500px;
+	position: absolute;
+	top: 10%;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#slajderTekst h2{
+	font-family: 'Berkshire Swash', cursive;
+	color: #FFD700;
+	font-size: 55px;
+}
+
+#slajderTekst p {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 21px;
+}
+
+#dugmereg {
+	font-family: 'Berkshire Swash', cursive;
+	background-color: #FFD700;
+	font-size: 30px;
+	border-radius: 5px;
+	margin-top: 30px;
+	padding: 7px 20px;
+	display: inline-block;
+}
+
+#futer {
+	background-color: #FFD700;
+}
+
+#futer p {
+	color: #000;
+}
+/* ----- KATEGORIJE  ----- */
+
+.d {
+	text-align: center;
+	padding: 70px 0px;
+	color: #fff;
+}
+
+.naslov {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 70px;
+}
+
+.naslov h3 {
+	width: 40%;
+	font-size: 40px;
+	color: #FFD700;
+}
+
+.naslov .linija {
+	width: 30%;
+	border-bottom: 2px solid #FFD700;
+}
+
+.d .sat {
+	width: 40%;
+	height: 500px;
+	background-size: cover;
+	margin: 0% 5%;
+	border-radius: 5px;
+	position: relative;
+}
+
+.d .satTekst {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 25px;
+	color: #000;
+}
+
+.sat .satTekst .marka {
+	padding: 5% 0px;
+	background-color: #FFD700;
+	width: 100%;
+	border-radius: 5px; 
+	color: #000;
+}
+
+.marka p a {
+	color: #000 !important;
+	font-size: 25px;
+}
+#police {
+	background-image: url('../images/policesat.jpeg');
+}
+
+#hublot {
+	background-image: url('../images/hublotsat.jpg');
+}
+
+#police:hover {
+	transform: scale(1.1, 1.1);
+	transition: 1s;
+}
+
+#hublot:hover {
+	transform: scale(1.1, 1.1);
+	transition: 1s;
+}
+
+#brendovi {
+	padding-top: 10%;
+}
+/* ----- NAJNOVIJI  ----- */
+
+#proizvodi, #satovi {
+	width: 100%;
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#proizvodi .proizvod {
+	color: #252525;
+	width: 20%;
+	padding: 20px 0px;
+	border-radius: 5px;
+	border: 3px double #ccc;
+	background-color: #fff;
+	position: relative;
+}
+#proizvodi .cena {
+	position: absolute;
+	right: 20px;
+	top:20px;
+	background-color: rgb(220,214,180);
+	border-radius: 2px;
+	padding: 5px 15px;
+}
+
+#proizvodi .slika {
+	margin-bottom: 20px;
+}
+
+
+/* ----- BRENDOVI  ----- */
+
+#brendovi {
+	width: 100%;
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/* ----- KONTAKT  ----- */
+
+#kontakt {
+	width: 100%;
+}
+#forma{
+	width: 50%;
+	float: left;
+}
+
+#forma input, #forma textarea {
+	width: 100%;
+	display: block;
+	padding: 13px;
+	margin-bottom: 15px;
+	border: 1px solid rgb(90,90,90);
+	background-color: #fff;
+	color: #000;
+	font-size: 25px;
+	border-radius: 5px;
+}
+
+#forma input[type="text"]{
+	width: 100%;
+	font-size: 25px;
+	border-radius: 5px;
+}
+
+#forma ::placeholder {
+	color: #808080;
+}
+#forma input[type="submit"] {
+	background-color: #ffd700;
+	color: #000;
+	border-radius: 5px;
+}
+
+/* garancija */
+#garancijaTekst {
+	width: 100%;
+}
+
+#garancijaTekst p {
+	color: #fff;
+	font-size: 22px;
+	text-align: justify;
+}
+
+#garancijaTekst h1 {
+	color: #fff;
+	font-size: 30px;
+	text-align: justify;
+}
+
+/* garancija */
+
+/* o nama */
+
+#oNama {
+	margin-top: 150px;
+	width: 100%;
+	height: 550px;
+	background-image: url('../images/onama.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 47%;
+	
+}
+
+.okvir h1 {
+	color: #FFD700;
+	letter-spacing: 4px;
+}
+
+.okvir p {
+	color: #fff;
+	text-align: justify;
+	font-size: 25px;
+}
+
+.okvir p a {
+	color: #FFD700;
+}
+
+.okvir p a:hover {
+	color: #fff;
+}
+/* o nama */
+#mapa {
+	width: 30%;
+	float: right;
+}
+
+#futer {
+	text-align: center;
+	color: #FFD700;
+	padding: 30px;
+	font-size: 20px;
+}
+
+#futer a {
+	color: #000;
+}
+
+#futer a:hover {
+	color: #fff;
+}
+
+
+/* ----- MEDIA QUERIES  ----- */
+
+/* Za velicine do 1200px */
+@media screen and (max-width: 1200px){
+
+	.okvir {
+		width: 100%;
+		padding: 30px 30px;
+	}
+
+}
+
+@media screen and (max-width: 990px){
+	
+	/* Zaglavlje */
+	#logo {
+		width: 20%;
+	}
+
+	#meni {
+		width: 80%;
+		padding-right: 50px;
+	}
+	
+	/* Slajder */
+	#slajderTekst {
+		background-color: rgba(0,0,0,0.5);
+		text-align: center;
+		left: 5%;
+	}
+	#slajderTekst p {
+		text-align: justify;
+	}
+
+	/* Kategorije */
+	.naslov h3 {
+		font-size: 30px;
+	}
+
+	.d .sat {
+		width: 40%;
+		height: 250px;
+		margin-bottom: 30px;
+	}
+
+	.marka p a {
+		color: #000 !important;
+		font-size: 18px;
+	}
+
+	
+	/* Najnoviji */
+	#proizvodi .proizvod {
+		width: 45%;
+		margin-bottom: 20px;
+	}
+
+	/* Kontakt */
+	#kontakt {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0px 10%;
+	}
+
+	#mapa {
+		order:1;
+		width: 100%;
+	}
+
+	#forma {
+		order:2;
+		width: 100%;
+		margin: 30px 0px 0px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 750px){
+
+	/* Zaglavlje */
+	#heder {
+		position: static;
+		height: auto;
+	}
+	
+	#meni {
+		width: 70%;
+	}
+
+	#meni {
+		padding: 20px 10px;
+	}
+
+	#meni ul {
+		display: none;
+	}
+	
+	#dugmeMeni {
+		display: block;
+	}
+	
+	#logo {
+		float:left;
+		width: 30%;
+	}
+
+	/* Slajder */
+	#slajder {
+		margin: 0px 0px 30px 0px;
+	}
+
+	#slajderTekst {
+		width: 90%;
+		left: 5%;
+	}
+	#slajderTekst p {
+		font-size: 19px;
+	}
+	
+	#slajder {
+		background-position: center;
+	}
+	
+	#garancija {
+		background-position: center;
+	}
+	#brendovi {
+		padding-top: 0px;
+	}
+	
+	#oNama {
+		background-position: center;
+	}
+	/* Kategorije */
+	.d .sat {
+		width: 100%;
+		height: 500px;
+	}
+	
+	.sat .satTekst .marka {
+		padding: 22px 0px;
+	}
+	.sat .satTekst .marka, .sat .satTekst {
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 495px) {
+	/* Zaglavlje */
+	#heder .okvir{
+		padding: 20px 30px 0px;
+	}
+
+	#logo {
+		width: 30%;
+		padding: 0px;
+	}
+
+	#dugmeMeni {
+		display: block;
+	}
+
+	#meni ul {
+		flex-direction: column;
+		display: none;
+	}
+
+	/* Slajder */
+	#slajderTekst h2 {
+		font-size: 40px;
+	}
+
+	#slajderTekst p {
+		font-size: 15px;
+	}
+	
+	#slajder {
+	background-position: center;
+	}
+	
+	#garancija {
+		background-position: right;
+	}
+	
+	/* Kategorije */
+	.d .sat {
+		height: 400px;
+	}
+
+	/* Proizvodi */
+	#proizvodi .proizvod {
+		width: 100%;
+		margin: 30px;
+	}
+	
+	/* Kontakt */
+
+	#forma input[type='text']{
+		width: 100%;
+	}
+
+}
